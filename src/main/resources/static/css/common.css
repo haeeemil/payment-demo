@@ -1,0 +1,24 @@
+* { margin: 0; padding: 0; }
+:root {
+    --theme: #3b5998;
+}
+.wrapper { padding: 15px; text-align: center;}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {height:33px; line-height:33px; padding:0 10px; margin:0; border:1px solid #d1d1d1; border-radius:0; -webkit-appearance: none; color:#666; font-family:dotum; font-size:14px;}
+input.card { width: 70px !important; }
+input.email{ width: 300px !important; }
+
+.table-wrapper { border: 1px solid black; margin: 10px; padding: 10px; }
+.table01 {width:100%; border-collapse:collapse; border-spacing:0;box-sizing:border-box; border-left: 1px solid #bdc8ca; border-right:1px solid #bdc8ca; border-top:1px solid #bdc8ca; }
+.table01 th {min-width:160px; padding:20px 1.5%; border-bottom:1px solid #bdc8ca; background:#ececec; text-align:left; }
+.table01 td {padding:10px 0 10px 10px; border-top:0; border-right:1px solid #bdc8ca; border-bottom:1px solid #bdc8ca; text-align: left;}
+.table01 td input[type="text"],
+.table01 td input[type="password"] {box-sizing:border-box; width:280px;}
+
+.button {display:inline-block; padding:0 26px; margin:0 13px; height:33px; line-height:33px; font-weight:bold; text-decoration:none; text-align:center; white-space:nowrap;}
+.btn01 {background:var(--theme); color:#fff;}
+.btn02 {background:#F83839; color:#fff;}
+.btn05 {background:#676767; color:#fff;}
+.btn06 {background:#3f3f3f; color:#fff;}
