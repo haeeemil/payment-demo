@@ -4,6 +4,5 @@ public enum CardType {
 
     VISA,
     MASTER,
-    JCB,
     AMEX
 }

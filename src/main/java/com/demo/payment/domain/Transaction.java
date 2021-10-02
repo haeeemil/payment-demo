@@ -3,18 +3,17 @@ package com.demo.payment.domain;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
+
 
 @Entity
 @Getter @Setter
 public class Transaction {
 
-    @Id
-    @GeneratedValue
-    private long id;
+    @Id @GeneratedValue
+    @Column(name = "transaction_id")
+    private Long id;
     private PayType type;
     private int cardNumber;
     private int cardExpired;
