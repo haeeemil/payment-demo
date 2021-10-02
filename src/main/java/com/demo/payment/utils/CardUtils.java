@@ -4,9 +4,9 @@ import com.demo.payment.domain.CardType;
 
 public class CardUtils {
 
-    public static CardType getCardType(int bin) {
+    public static String getCardType(int bin) {
 
-        return CardType.JCB;
+        return "";
     }
 
     public static String getMaskingCardNumber(int cardNumber) {
