@@ -15,9 +15,17 @@ public class Transaction {
     @Column(name = "transaction_id")
     private Long id;
     private PayType type;
-    private int cardNumber;
-    private int cardExpired;
-    private int csv;
+
+    //카드 16자
+    private String cardNumber1;
+    private String cardNumber2;
+    private String cardNumber3;
+    private String cardNumber4;
+    //카드 유효기간 월/년
+    private String cardExpired1;
+    private String cardExpired2;
+
+    private String csv;
     private String cardHolder;
     private CardType cardType;
     private double amount;
@@ -26,7 +34,7 @@ public class Transaction {
     private String approvalNumber;
     private ErrorCode errorCode;
     private String connectIp;
-    private int phoneNumber;
+    private String phoneNumber;
     private String Email;
     private LocalDateTime createdAt;
 }

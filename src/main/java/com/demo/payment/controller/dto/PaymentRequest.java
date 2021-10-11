@@ -1,13 +1,20 @@
 package com.demo.payment.controller.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.validation.constraints.NotEmpty;
 
+@Getter @Setter
 public class PaymentRequest {
 
     @NotEmpty(message = "카드번호는 필수 입니다")
-    public int cardNumber1;
-    public int cardNumber2;
-    public int cardNumber3;
-    public int cardNumber4;
+    public String cardNumber1;
+    public String cardNumber2;
+    public String cardNumber3;
+    public String cardNumber4;
+
+    public String cardExpired1;
+    public String cardExpired2;
 
 }

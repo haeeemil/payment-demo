@@ -29,3 +29,13 @@ input.email{ width: 300px !important; }
 .btn02 {background:#F83839; color:#fff;}
 .btn05 {background:#676767; color:#fff;}
 .btn06 {background:#3f3f3f; color:#fff;}
+
+.p-fontsize {
+    font-size: 15px;
+    color: #000000;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.p-fontsize1 {
+    margin-left: 8%;
+}
