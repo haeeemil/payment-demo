@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; }
+:root {
+    --theme: #3b5998;
+    --default: #3f3f3f;
+}
+html, body { width: 100%; height: 100%; font-size: 13px; line-height: 1.8rem; color: var(--default); margin: 0; padding: 0; }
+.wrapper { max-width: 500px; margin: auto; }
+.section-row { display: flex; flex-direction: row; }
+.section-col { display: flex; flex-direction: column; }
+
+a { text-decoration: none; cursor: pointer; }
+hidden { display: none; }
+.center { text-align: center; }
+
+.space-24 { margin-bottom: 24px;}
+.space-36 { margin-bottom: 36px; margin-top: 10%; }
+.space-60 { margin-bottom: 60px; }
+
+label{ border-left: 5px solid var(--theme); padding-left: 10px; font-size: 16px; font-weight: bold; }
+input[type="text"],
+input[type="password"]
+{ width: calc(100% - 30px); height: 20px; border: none; border-bottom: 1px solid var(--default); padding: 10px 15px; font-size: 15px; }
+input:focus { outline: none; }
+input.card { width: 70px !important; }
+input.email{ width: 300px !important; }
+
+.button { width: 100%; max-width: 440px; height: 40px; text-align: center; cursor: pointer; }
+.btn01 { background-color: var(--theme); color: #fff; border: 1px solid var(--theme); }
+.btn02 {background:#F83839; color:#fff;}
+.btn05 {background:#676767; color:#fff;}
+.btn06 {background:#3f3f3f; color:#fff;}
+
+.p-fontsize {
+    font-size: 15px;
+    color: #000000;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.p-fontsize1 {
+    margin-left: 8%;
+}

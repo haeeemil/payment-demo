@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head" />
+<body>
+<section>
+    <div class="wrapper">
+        <h1 class="space-36">신용카드 결제 확인</h1>
+        <form action="" method="post">
+            <div class="section-col space-24">
+                <label>금액</label>
+                <p class="p-fontsize" th:text="${price}"/>
+                <input type="text" value="" hidden/>
+            </div>
+            <div class="section-col space-24">
+                <label>카드번호</label>
+                <div class="section-row">
+                    <input type="text" class="card" maxlength="4" name="cardNumber1" th:value="${m.cardNumber1}"/>&nbsp;
+                    <input type="password" class="card" maxlength="4" name="cardNumber2" th:value="${m.cardNumber2}"/>&nbsp;
+                    <input type="password" class="card" maxlength="4" name="cardNumber3" th:value="${m.cardNumber3}"/>&nbsp;
+                    <input type="text" class="card" maxlength="4" name="cardNumber4" th:value="${m.cardNumber4}"/>
+                </div>
+            </div>
+            <div class="section-col space-24">
+                <label>유효기한</label>
+                <div class="section-row">
+                    <input type="password" class="card" maxlength="2" name="cardExpired_month" th:value="${m.cardExpired_month}"/>&nbsp;/&nbsp;
+                    <input type="password" class="card" maxlength="2" name="cardExpired_year" th:value="${m.cardExpired_year}"/>
+                </div>
+            </div>
+            <div class="section-col space-24">
+                <label>보안코드</label>
+                <input type="password" maxlength="3" name="csv" th:value="${m.csv}"/>
+            </div>
+            <div class="section-col space-24">
+                <label>카드소유주</label>
+                <input type="text" name="cardHolder" class="" th:value="${m.cardHolder}">
+            </div>
+            <div class="section-col space-24">
+                <label>전화번호</label>
+                <input type="text" name="phoneNumber" class="" th:value="${m.phoneNumber}">
+            </div>
+            <div class="section-col space-60">
+                <label>이메일</label>
+                <input type="text" name="Email" class="" th:value="${m.Email}">
+            </div>
+            <div class="center">
+                <button type="submit" class="button btn01">결제 확인</button>
+            </div>
+        </form>
+    </div>
+</section>
+<script type="text/javascript" src="/js/payment.js"></script>
+</body>
+</html>
