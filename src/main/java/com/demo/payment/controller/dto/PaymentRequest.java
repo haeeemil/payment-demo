@@ -14,7 +14,7 @@ public class PaymentRequest {
     public String cardNumber3;
     public String cardNumber4;
 
-    public String cardExpired1;
-    public String cardExpired2;
+    public String cardExpired_month;
+    public String cardExpired_year;
 
 }

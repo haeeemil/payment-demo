@@ -12,8 +12,8 @@ a { text-decoration: none; cursor: pointer; }
 hidden { display: none; }
 .center { text-align: center; }
 
-.space-24 { margin-bottom: 24px; }
-.space-36 { margin-bottom: 36px; }
+.space-24 { margin-bottom: 24px;}
+.space-36 { margin-bottom: 36px; margin-top: 10%; }
 .space-60 { margin-bottom: 60px; }
 
 label{ border-left: 5px solid var(--theme); padding-left: 10px; font-size: 16px; font-weight: bold; }

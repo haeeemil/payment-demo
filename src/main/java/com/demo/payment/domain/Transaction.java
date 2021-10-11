@@ -22,8 +22,8 @@ public class Transaction {
     private String cardNumber3;
     private String cardNumber4;
     //카드 유효기간 월/년
-    private String cardExpired1;
-    private String cardExpired2;
+    private String cardExpired_month;
+    private String cardExpired_year;
 
     private String csv;
     private String cardHolder;
