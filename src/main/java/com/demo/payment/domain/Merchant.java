@@ -15,7 +15,9 @@ public class Merchant {
     private Long id;
     private String merchantName;
     private String groupId;
+    @Enumerated(EnumType.STRING)
     private State state;
+    @Enumerated(EnumType.STRING)
     private Currency baseCurrency;
     private String email;
     private String tel;
