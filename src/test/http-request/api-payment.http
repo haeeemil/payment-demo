@@ -1,0 +1,9 @@
+POST http://{{host}}:{{port}}/api/v1/payment
+content-type: application/json
+
+{
+  "payType": "1",
+  "merchantId": "test",
+  "password": "",
+  "price": 140000
+}
