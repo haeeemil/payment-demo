@@ -1,7 +1,7 @@
 package com.demo.payment.controller;
 
 import com.demo.payment.controller.dto.PaymentRequest;
-import com.demo.payment.controller.dto.RecurringRequest;
+import com.demo.payment.controller.dto.RecurringForm;
 import com.demo.payment.controller.dto.RecurringResponse;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
@@ -21,7 +21,7 @@ public class TransactionApiController {
     }
 
     @PostMapping("/api/v1/recurring")
-    public RecurringResponse recurring(@RequestBody @Valid RecurringRequest request, BindingResult result) {
+    public RecurringResponse recurring(@RequestBody @Valid RecurringForm request, BindingResult result) {
       RecurringResponse response = new RecurringResponse();
 
         if (result.hasErrors()) {

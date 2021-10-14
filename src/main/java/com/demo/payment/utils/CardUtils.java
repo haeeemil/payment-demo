@@ -9,7 +9,7 @@ public class CardUtils {
         return "";
     }
 
-    public static String getMaskingCardNumber(int cardNumber) {
+    public static String getMaskedCardNumber(String cardNumber1, String cardNumber2, String cardNumber3, String cardNumber4) {
         return "";
     }
 }
