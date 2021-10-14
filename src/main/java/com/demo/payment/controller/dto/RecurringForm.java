@@ -5,7 +5,7 @@ import lombok.Getter;
 import javax.validation.constraints.NotEmpty;
 
 @Getter
-public class RecurringRequest {
+public class RecurringForm {
 
     @NotEmpty(message = "카드번호1 필수 입니다")
     public String cardNumber1;
