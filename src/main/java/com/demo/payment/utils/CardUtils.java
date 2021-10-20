@@ -9,7 +9,16 @@ public class CardUtils {
         return "";
     }
 
-    public static String getMaskedCardNumber(String cardNumber1, String cardNumber2, String cardNumber3, String cardNumber4) {
-        return "";
+    public static boolean isRightCardNumber(String cardNumber1) {
+        if(cardNumber1.startsWith("8")){
+            return false;
+        }
+
+
+
+        return true;
+
     }
+
+
 }

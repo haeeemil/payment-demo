@@ -21,19 +21,17 @@ public class MainController {
 
     @GetMapping("/recurring")
     public String recurring (Model model) {
-        RecurringForm recurringForm = new RecurringForm();
-        model.addAttribute("recurringForm", recurringForm);
-        return "recurringForm";
+        return "/recurringForm";
     }
 
-    @PostMapping("/recurring/confirm")
+/*    @PostMapping("/recurring/confirm")
     public String recurringConfirm (@Valid RecurringForm form, BindingResult result) {
         if (result.hasErrors()) {
             return "recurringForm";
         }
 
         return "/";
-    }
+    }*/
 
     @PostMapping("paymentconfirm")
     public String paymentconfirm (Model model, Transaction transaction) {
